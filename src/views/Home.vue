@@ -1,7 +1,7 @@
 <template lang="pug">
 img(src="@/assets/theCat.png")
 h2 The one and only:
-h1 Odobryams!
+h1 Odobryams counter!
 counter
 </template>
 

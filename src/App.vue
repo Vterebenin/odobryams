@@ -1,5 +1,5 @@
 <template lang="pug">
-#nav
+// #nav
   router-link(to="/") Home
   router-link(to="/about") About
 router-view

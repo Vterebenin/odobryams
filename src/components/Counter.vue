@@ -1,6 +1,7 @@
 <template lang="pug">
+h1 {{ state.count }}
 button(@click="addMoreOdobryams")
-  | count is: {{ state.count  }}
+  | add another odobryams
 </template>
 <script>
 import { reactive, computed } from 'vue'
@@ -12,7 +13,10 @@ export default {
     })
 
     const addMoreOdobryams = () => {
-      state.count++
+      const password = window.prompt('Enter the passphrase to make it!')
+      password && ['ковшечка', 'ковш', 'ковшик'].includes(password.toLowerCase())
+        ? state.count++
+        : alert('yo! you are not the real odobryams')
     }
 
     return {
